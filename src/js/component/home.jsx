@@ -1,26 +1,63 @@
 import React from "react";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Jumbotron from "./Jumbotron";
+import Card from "./Card";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+const listaProducts = [
+  {
+    title: "titulo 1",
+    content: "lorem ipsum et dolor algo",
+    image: "https://picsum.photos/400/325",
+    price: 45,
+  },
+  {
+    title: "titulo 2",
+    content: "lorem ipsum et dolor algo",
+    image: "https://picsum.photos/401/325",
+    price: 45,
+  },
+  {
+    title: "titulo 3",
+    content: "lorem ipsum et dolor algo",
+    image: "https://picsum.photos/403/325",
+    price: 45,
+  },
+  {
+    title: "titulo 4",
+    content: "lorem ipsum et dolor algo",
+    image: "https://picsum.photos/402/325",
+    price: 45,
+  },
+];
 
 //create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  return (
+    <>
+      {/* Navbar */}
+      <Navbar />
+      {/* Jumbotron */}
+      <div className="container my-2 ">
+        <Jumbotron />
+      </div>{" "}
+      {/* Card X 4 */}
+      <div className="container row mx-auto">
+        {listaProducts.map((product, index) => {
+          return (
+            <Card
+              key={index}
+              title={product.title}
+              content={product.content}
+              image={product.image}
+              price={product.price}
+            />
+          );
+        })}
+      </div>
+      {/* footer */}
+    </>
+  );
 };
 
 export default Home;
