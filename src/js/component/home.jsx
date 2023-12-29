@@ -7,26 +7,26 @@ import Card from "./Card";
 const listaProducts = [
   {
     title: "titulo 1",
-    content: "lorem ipsum et dolor algo",
-    image: "https://picsum.photos/400/325",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nam corrupti libero consequatur iure eius aliquam!",
+    image: "https://picsum.photos/500/325",
     price: 45,
   },
   {
     title: "titulo 2",
-    content: "lorem ipsum et dolor algo",
-    image: "https://picsum.photos/401/325",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nam corrupti libero consequatur iure eius aliquam!",
+    image: "https://picsum.photos/501/325",
     price: 45,
   },
   {
     title: "titulo 3",
-    content: "lorem ipsum et dolor algo",
-    image: "https://picsum.photos/403/325",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nam corrupti libero consequatur iure eius aliquam!",
+    image: "https://picsum.photos/503/325",
     price: 45,
   },
   {
     title: "titulo 4",
-    content: "lorem ipsum et dolor algo",
-    image: "https://picsum.photos/402/325",
+    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nam corrupti libero consequatur iure eius aliquam!",
+    image: "https://picsum.photos/502/325",
     price: 45,
   },
 ];
@@ -56,6 +56,7 @@ const Home = () => {
         })}
       </div>
       {/* footer */}
+      <Footer />
     </>
   );
 };

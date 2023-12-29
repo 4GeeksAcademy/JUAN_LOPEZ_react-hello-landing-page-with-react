@@ -9,7 +9,12 @@ const Jumbotron = () => {
           <p>
             Swap the background-color utility and add a `.text-*` color utility
             to mix up the jumbotron look. Then, mix and match with additional
-            component themes and more.
+            component themes and more. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Doloribus provident illum repellendus fugiat
+            dolorem placeat. Consectetur ad deserunt sapiente dolores est
+            laudantium dicta! Nostrum fuga deleniti cum quae nisi veniam
+            aliquid. Consequuntur ipsam, a quisquam asperiores dolores officia.
+            Dicta eaque fugiat unde eveniet cumque explicabo.
           </p>
           <button className="btn btn-primary" type="button">
             Example button

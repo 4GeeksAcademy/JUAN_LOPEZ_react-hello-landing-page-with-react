@@ -9,9 +9,14 @@ const Card = ({ title, image, content, price }) => {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{content}</p>
-          <a href="#" className="btn btn-primary">
-            Comprar {price}$
-          </a>
+          <div className="card-footer">
+            <a
+              href="#"
+              className="btn btn-primary d-flex justify-content-center"
+            >
+              Comprar {price}$
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -19,10 +24,10 @@ const Card = ({ title, image, content, price }) => {
 };
 
 Card.propTypes = {
-    title: PropTypes.string,
-    image: PropTypes.string,
-    content: PropTypes.string,
-    price: PropTypes.number,
+  title: PropTypes.string,
+  image: PropTypes.string,
+  content: PropTypes.string,
+  price: PropTypes.number,
 };
 
 export default Card;
